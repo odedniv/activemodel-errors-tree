@@ -71,7 +71,7 @@ the associations, and render out each association's errors.
 
 ### errors.details (the recommended way)
 
-If you use Rails 5 or include the `active_model-errors_details` gem, you can use
+If you use Rails 5 or include the [active_model-errors_details](https://github.com/cowbell/active_model-errors_details) gem, you can use
 `@record.errors.tree.details` instead of `messages`. This is more API friendly
 since it let's your client decide on the actual messages.
 
