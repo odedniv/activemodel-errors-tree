@@ -25,7 +25,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.2"
   spec.add_development_dependency "sqlite3", "~> 1.3"
-  # TODO: switch to activerecord 5 and remove active_model-errors_details
-  spec.add_development_dependency "active_model-errors_details", "~> 1.2"
-  spec.add_development_dependency "activerecord", "~> 4.2"
+  spec.add_development_dependency "activerecord", "~> 5.0"
 end

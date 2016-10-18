@@ -2,7 +2,6 @@ $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'activemodel/errors/tree'
 
 require 'active_record'
-require 'active_model/errors_details'
 
 RSpec.configure do |config|
   config.before :suite do
