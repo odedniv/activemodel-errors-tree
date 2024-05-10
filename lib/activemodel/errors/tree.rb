@@ -1,5 +1,5 @@
-require "active_model/errors"
-require "active_support/hash_with_indifferent_access"
+require "active_model"
+require "active_support"
 
 module ActiveModel
   class Errors
@@ -23,7 +23,7 @@ module ActiveModel
 
       def method_tree(method)
         result = ActiveSupport::HashWithIndifferentAccess.new
-        @errors.keys.each do |original_attribute|
+        @errors.attribute_names.each do |original_attribute|
           attribute, sub_attribute = original_attribute.to_s.split(ATTRIBUTE_SEPARATOR, 2) # we really only care about the first one
           if sub_attribute.nil?
             result[attribute] = @errors.send(method)[original_attribute]
