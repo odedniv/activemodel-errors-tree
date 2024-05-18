@@ -41,21 +41,21 @@ module ActiveModel
     end
 
     alias_method :add_without_reset_tree, :add
-    def add(*args)
+    def add(...)
       @tree = nil
-      add_without_reset_tree(*args)
+      add_without_reset_tree(...)
     end
 
     alias_method :delete_without_reset_tree, :delete
-    def delete(*args)
+    def delete(...)
       @tree = nil
-      delete_without_reset_tree(*args)
+      delete_without_reset_tree(...)
     end
 
     alias_method :clear_without_reset_tree, :clear
-    def clear(*args)
+    def clear(...)
       @tree = nil
-      clear_without_reset_tree(*args)
+      clear_without_reset_tree(...)
     end
   end
 end

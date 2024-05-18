@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "activemodel-errors-tree"
-  spec.version       = "0.2.0" # for some reason Rails applications do not like it defined in activemodel/errors/tree/version
+  spec.version       = "0.2.1" # for some reason Rails applications do not like it defined in activemodel/errors/tree/version
   spec.authors       = ["Oded Niv"]
   spec.email         = ["oded.niv@gmail.com"]
 
